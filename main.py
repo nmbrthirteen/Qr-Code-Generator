@@ -64,14 +64,14 @@ def put_logo_in_qr(qr_image, logo_path, qr_back='#ffffff'):
   return qr_image
 
 
-image = generate_qr_code(data='https://bubbler.live',
+image = generate_qr_code(data='https://example.com',
                          fill_color='#08050c',
                          bgcolor='#fff',
                          size=(1000, 1000))
 
 # If you don't need logo in the middle just comment this two line
 
-logo_path = 'https://bubbler.live/wp-content/uploads/2021/06/cropped-bubbler-2-1.png'
+logo_path = 'https://img.logoipsum.com/292.svg'
 image = put_logo_in_qr(image, logo_path)
 
 image.save('new_qr_code.png')
